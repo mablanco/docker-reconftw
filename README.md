@@ -8,19 +8,19 @@ I recommend running the Docker container with the `--rm` parameter when using re
 
 **Full scan:**
 
-    $ docker run -t --rm mablanco/reconftw -d example.com -a
+    $ docker run -it --rm mablanco/reconftw -d example.com -a
 
 **Subdomains scan:**
 
-    $ docker run -t --rm mablanco/reconftw -d example.com -s
+    $ docker run -it --rm mablanco/reconftw -d example.com -s
 
 **Web scan (target list required):**
 
-    $ docker run -t --rm mablanco/reconftw -d example.com -l targets.txt -w
+    $ docker run -it --rm mablanco/reconftw -d example.com -l targets.txt -w
 
 **Dorks:**
 
-    $ docker run -t --rm mablanco/reconftw -d example.com -g
+    $ docker run -it --rm mablanco/reconftw -d example.com -g
 
 More info and examples are available in the inline help:
 
