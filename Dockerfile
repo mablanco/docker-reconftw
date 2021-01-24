@@ -13,4 +13,4 @@ RUN apk add --update --no-cache bash python3 py3-pip sudo nmap && \
     chmod +x install.sh && \
     bash -x ./install.sh && \
     apk del .install-deps
-CMD ["/app/reconftw.sh"]
+ENTRYPOINT ["/app/reconftw.sh"]
