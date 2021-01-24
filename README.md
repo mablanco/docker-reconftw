@@ -6,26 +6,25 @@ Docker image for reconftw, a simple script intended to perform a full recon on a
 
 I recommend running the Docker container with the `--rm` parameter when using reconftw as a CLI tool, which will remove the container after finishing its execution.
 
-Inline help:
-
-    $ docker run --rm mablanco/reconftw
-
-Full scan:
+**Full scan:**
 
     $ docker run -t --rm mablanco/reconftw -d example.com -a
 
-Subdomains scan:
+**Subdomains scan:**
 
     $ docker run -t --rm mablanco/reconftw -d example.com -s
 
-Web scan (target list required):
+**Web scan (target list required):**
 
     $ docker run -t --rm mablanco/reconftw -d example.com -l targets.txt -w
 
-Dorks:
+**Dorks:**
 
     $ docker run -t --rm mablanco/reconftw -d example.com -g
 
+More info and examples are available in the inline help:
+
+    $ docker run --rm mablanco/reconftw
 ## How to build this image
 
 Use the following command to build the image with the `latest` tag:
