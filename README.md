@@ -14,13 +14,17 @@ I recommend running the Docker container with the `--rm` parameter when using re
 
     $ docker run -it --rm mablanco/reconftw -d example.com -s
 
-**Web scan (target list required):**
+**Web scan:**
 
-    $ docker run -it --rm mablanco/reconftw -d example.com -l targets.txt -w
+    $ docker run -it --rm mablanco/reconftw -d example.com -w
 
 **Dorks:**
 
     $ docker run -it --rm mablanco/reconftw -d example.com -g
+
+When using a list of targets, load it into the container using volumes. For example:
+
+    $ docker run -it --rm -v $PWD/targets.txt:/app/targets.txt mablanco/reconftw -l /app/targets.txt -a
 
 More info and examples are available in the inline help:
 
