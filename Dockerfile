@@ -7,8 +7,8 @@ ENV LANG="en_US.UTF-8" \
     GOOS="linux" \
     GOPATH="/go" \
     GOROOT="/usr/local/go"
-RUN apk add bash git
+RUN apk add bash git python3 py3-pip sudo
 RUN git clone --depth 1 https://github.com/six2dez/reconftw.git -b $RECONFTW_VERSION . && \
     chmod +x install.sh && \
     bash -x ./install.sh
-ENTRYPOINT ["/app/reconftw.sh"]
+CMD ["/app/reconftw.sh"]
