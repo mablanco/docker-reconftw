@@ -6,21 +6,17 @@ Docker image for reconftw, a simple script intended to perform a full recon on a
 
 I recommend running the Docker container with the `--rm` parameter when using reconftw as a CLI tool, which will remove the container after finishing its execution.
 
-**Full scan:**
+**Perform all checks:**
 
     $ docker run -it --rm mablanco/reconftw -d example.com -a
 
-**Subdomains scan:**
+**Full subdomains scan:**
 
     $ docker run -it --rm mablanco/reconftw -d example.com -s
 
-**Web scan:**
+**Perform web checks only without subs:**
 
     $ docker run -it --rm mablanco/reconftw -d example.com -w
-
-**Dorks:**
-
-    $ docker run -it --rm mablanco/reconftw -d example.com -g
 
 When using a list of targets, load it into the container using volumes. For example:
 
@@ -29,6 +25,7 @@ When using a list of targets, load it into the container using volumes. For exam
 More info and examples are available in the inline help:
 
     $ docker run --rm mablanco/reconftw
+
 ## How to build this image
 
 Use the following command to build the image with the `latest` tag:
