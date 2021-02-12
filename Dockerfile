@@ -12,7 +12,5 @@ RUN apk add --update --no-cache bash python3 py3-pip sudo nmap git jq && \
     git clone --depth 1 https://github.com/six2dez/reconftw.git -b $RECONFTW_VERSION . && \
     chmod +x install.sh && \
     bash -x ./install.sh && \
-    apk del .install-deps && \
-    go get -v -u github.com/jaeles-project/gospider && \
-    pip3 install arjun
+    apk del .install-deps
 ENTRYPOINT ["/app/reconftw.sh"]
