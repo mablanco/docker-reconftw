@@ -1,4 +1,4 @@
-FROM golang:1.16.2-alpine3.13
+FROM golang:1.15.10-alpine3.13
 ARG RECONFTW_VERSION=v1.3.0
 WORKDIR /app
 ENV LANG="en_US.UTF-8" \
