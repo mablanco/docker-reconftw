@@ -13,5 +13,6 @@ RUN apk add --update --no-cache bash python3 py3-pip ruby curl wget chromium xvf
     git clone --depth 1 https://github.com/six2dez/reconftw.git -b $RECONFTW_VERSION . && \
     chmod +x install.sh && \
     bash -x ./install.sh && \
+    GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@v2.4.5 && \
     apk del .install-deps
 ENTRYPOINT ["/app/reconftw.sh"]
