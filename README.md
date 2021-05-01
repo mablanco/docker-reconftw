@@ -1,3 +1,5 @@
+> :warning: This repository has been archived. The upstream developers are actively mantaining their own Dockefile, so it makes no sense keep on working on my code.
+
 # docker-reconftw
 
 Docker image for reconftw, a simple script intended to perform a full recon on an objective with multiple subdomains (<https://github.com/six2dez/reconftw>).
