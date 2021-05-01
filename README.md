@@ -1,4 +1,4 @@
-> :warning: This repository has been archived. The upstream developers are actively mantaining their own Dockefile, so it makes no sense keep on working on my code.
+> :warning: This repository has been archived. The upstream developers are actively mantaining their own Dockefile, so it makes no sense to keep on working on my code.
 
 # docker-reconftw
 
